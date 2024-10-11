@@ -1,0 +1,29 @@
+/* src/App.css */
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .sidebar-item span:first-child {
+    margin-right: 10px;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  

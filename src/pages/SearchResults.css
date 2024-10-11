@@ -1,0 +1,16 @@
+/* src/pages/SearchResults.css */
+.search-results-page {
+    padding: 20px;
+  }
+  
+  .search-results-page h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .search-results-page .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  

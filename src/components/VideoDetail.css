@@ -1,0 +1,20 @@
+/* src/components/VideoDetail.css */
+.video-detail {
+    margin-top: 20px;
+  }
+  
+  .video-detail-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .video-detail-header p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .video-detail-body p {
+    font-size: 14px;
+    color: #555;
+  }
+  
