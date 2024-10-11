@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchVideos } from '../api/youtube';
 import VideoList from '../components/VideoList';
 
+
 const Home = () => {
   const [videos, setVideos] = useState([]);  // Default to empty array
 

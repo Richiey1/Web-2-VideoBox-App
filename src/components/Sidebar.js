@@ -1,24 +1,19 @@
+// src/components/Sidebar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-const categories = [
-  { name: 'Trending', icon: '🔥', path: '/' },
-  { name: 'Music', icon: '🎵', path: '/search/Music' },
-  { name: 'Sports', icon: '⚽', path: '/search/Sports' },
-  { name: 'News', icon: '📰', path: '/search/News' },
-  { name: 'Gaming', icon: '🎮', path: '/search/Gaming' },
-  // Add more categories as needed
-];
+import './Sidebar.css';  // Separate CSS for sidebar
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      {categories.map((category, index) => (
-        <Link to={category.path} key={index} className="sidebar-item">
-          <span>{category.icon}</span>
-          <span>{category.name}</span>
-        </Link>
-      ))}
+      <h3>Menu</h3>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/search/trending">Trending</Link></li>
+        <li><Link to="/search/sports">Sports</Link></li>
+        <li><Link to="/search/music">Music</Link></li>
+        {/* Add more categories or links as needed */}
+      </ul>
     </div>
   );
 };

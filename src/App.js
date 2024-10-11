@@ -5,21 +5,29 @@ import Home from './pages/Home';
 import SearchResults from './pages/SearchResults';
 import VideoPlayer from './pages/VideoPlayer';
 import Sidebar from './components/Sidebar';
-import VideoCard from './components/VideoCard';
-import VideoDetail from './components/VideoDetail';
-import VideoList from './components/VideoList';
-import './App.css';
+import './App.css';  // Global CSS
 
+// Import component-specific CSS
+import './components/Navbar';
+import './components/VideoCard.css';
+import './components/VideoDetail.css';
+import './components/VideoList.css';
+import './components/Sidebar.css';  // Assuming Sidebar has its own CSS
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search/:searchQuery" element={<SearchResults />} />
-        <Route path="/video/:videoId" element={<VideoPlayer />} />
-      </Routes>
+      <div className="app-layout">
+        <Sidebar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/search/:searchQuery" element={<SearchResults />} />
+            <Route path="/video/:videoId" element={<VideoPlayer />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 };
